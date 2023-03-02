@@ -1,0 +1,52 @@
+.modal-wrapper {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgb(66, 69, 99, 0.3);
+    backdrop-filter: blur(3px); 
+    z-index: 1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.devil {
+    z-index: 2;
+    top: 30px;
+    left: 300px;
+    display: flex;
+    position: absolute;
+    opacity: 0.7;
+    border: 3px solid black;
+    border-radius: 80px;
+}
+
+
+body {
+    background: rgb(66, 69, 99, 0.3); 
+    border: 10px solid black;
+    height: 929px;
+    padding: 0 1px 1px 1px;
+    margin: 0 auto;
+
+
+}
+
+
+.custom-modal {
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    background-color: wheat;
+    border-radius: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.error-msg {
+    color: red;
+}

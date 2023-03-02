@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> <!-- подключение bootstrap-->
+    <link rel="stylesheet" href="./index.css">
+    <title>Cats Project</title>    
+    <script defer src="./api.js"></script>
+    <script defer src="./index.js"></script>  
+</head>
+
+  <body>
+   
+    <!--<div class="container py-5">-->
+      <div>
+        <p><img class="devil" src=" https://i.pinimg.com/236x/ad/9a/c6/ad9ac6e38d0b8ef520ae3341f0efeca4--transfer.jpg" width="150px" height="150px" alt="кот"></p>
+        </div>
+    <h1 class="text-center mb-5">The cat is a beautiful devil</h1>
+    
+<!--вставить спинер-->
+    <div class="d-flex justify-content-center mb-5">
+      <button type="button" data-add_button class="btn btn-dark">Add Cat</button>
+      </div>
+      
+      <div data-modal class="modal-wrapper hidden">
+        <div class="custom-modal">
+          <form name="add_cats_form">
+            <button type="button" class="btn-close" aria-label="Close"></button>
+            <div class="mb-3">
+              <!--<label for="exampleInputEmail1" class="form-label">Email address</label>-->
+              <input name="id" type="number" placeholder="id" class="form-control">
+              <!--<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>-->
+            </div>
+            <div class="mb-3">
+              <!--<label for="exampleInputPassword1" class="form-label">Password</label>-->
+              <input name="name" type="text" placeholder="name" class="form-control">
+            </div>
+            <div class="mb-3">
+              <input name="image" type="text" placeholder="image" class="form-control">
+            </div>
+            <div class="mb-3">
+              <input name="age" type="number" placeholder="age" class="form-control">
+            </div>
+            <div class="mb-3">
+              <input name="rate" type="number" placeholder="rate" class="form-control">
+            </div>
+            <div class="mb-3 form-check">
+              <label class="form-check-label" for="exampleCheck1">Darling</label>
+              <input name="favorite"type="checkbox" class="form-check-input">
+            </div>
+            <div class="mb-3">
+              <textarea name="description"type="text" placeholder="description" class="form-control"></textarea>
+              </div>
+              <p class="error-msg" data-errmsg></p>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+
+
+    <div data-wrapper class="d-flex justify-content-center"></div>
+    <!--<<div class="card" style="width: 18rem;">
+        <img src="https://avatars.mds.yandex.net/i?id=8d6c1d07a9038c31f2701110440d9fc64f0bf739-7750971-images-thumbs&n=13" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>-->
+
+      </div>
+      </body>
+</html>
